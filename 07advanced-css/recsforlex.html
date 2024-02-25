@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Binge It With Lex</title>
+        <meta name="description" content="Binge It With Lex">
+        <meta name="author" content="Alexis Bronson">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="binge.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <!-- Start of the page header :)-->
+        <header>
+            <img src="images/icon.png" alt="Logo" width="100" height="100">
+            <div>
+            <h1>Binge It With Lex</h1>
+            <p>From being my favorites to yours</p>
+            </div>
+        </header>
+         <!-- Start of the navigation :)-->
+        <nav>
+         <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="tvshows.html">TV SHOWS</a></li>
+            <li><a href="movies.html">MOVIES</a></li>
+            <li><a href="youtube.html">YOUTUBE CHANNELS</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li class="active"><a href="recsforlex.html">RECS FOR LEX</a></li>
+         </ul>
+        </nav>
+         <!-- Start of the main :)-->
+        <main>
+            <h1>RECS FOR LEX</h1>
+            <p>I would love any recommendations that you have!</p>
+            <h2>Tv Shows</h2>
+            <form method="get" class="recs" action="thankstv.html">
+                <fieldset>
+                <legend>Show</legend>
+                <label>Title
+                    <input type="text" name="tvshows" required> </label>
+                    <label> Number of Seasons
+                        <select name="seasons">
+                        <option value="none">Please Select</option>
+                        <option value="short">1-2 Seasons</option>
+                        <option value="longish">2-5 Seasons</option>
+                        <option value="long">5+ Seasons</option>
+                       </select></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Genre</legend>
+                    <label><input type="checkbox" name="comedy" value="chosen"> Comedy </label> 
+                    <label><input type="checkbox" name="romance" value="chosen"> Romance </label>
+                    <label><input type="checkbox" name="drama" value="chosen"> Drama </label>
+                    <label><input type="checkbox" name="action_adventure" value="chosen"> Action/Adventure</label>
+                    <label><input type="checkbox" name="mystery" value="chosen"> Mystery</label><br>
+                    <label>Type
+                        <select name="type">
+                        <option value="none">Please Select</option>
+                        <option value="anime">anime</option>
+                        <option value="super">superhero</option>
+                        <option value="slowburn">slowburn</option>
+                        <option value="supernatural">supernatural</option>
+                        <option value="truecrime">truecrime</option>
+                        <option value="kdrama">kdrama</option>
+                        <option value="other">other</option>
+                       </select></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Where to watch</legend>
+                 <label><input type="radio" name="where" value="hulu"> Hulu</label>
+               <label><input type="radio" name="where" value="prime*"> Amazon Prime </label>
+               <label><input type="radio" name="where" value="apple"> Apple </label>
+               <label><input type="radio" name="where" value="netflix"> Netflix</label>
+               <label><input type="radio" name="where" value="crunchyroll"> Crunchyroll</label>
+               <label><input type="radio" name="where" value="youtube*"> Youtube </label>
+               <label><input type="radio" name="where" value="peacock"> Peacock</label>
+               <label><input type="radio" name="where" value="max"> Max</label>
+               <label><input type="radio" name="where" value="paramount"> Paramount</label>
+               <label><input type="radio" name="where" value="disney"> Disney+</label>
+                   </fieldset>
+
+                   <label>Anything else I should know?
+
+                    <textarea name="know?" placeholder="Is it free with the service or do I need to buy it?"></textarea>
+                   </label>
+
+                <input type="submit" value="Recommend!">
+            </form>
+
+            <h2>Movies</h2>
+            <form method="get" class="recs" action="thanksmovie.html">
+                <fieldset>
+                    <legend>Show</legend>
+                    <label>Title
+                        <input type="text" name="movies" required>  </label>
+                        <label>How Long?
+                            <select name="length">
+                            <option value="none">Please Select</option>
+                            <option value="short">1.5 hours</option>
+                            <option value="longish">2 hours</option>
+                            <option value="long">3+ hours</option>
+                           </select></label>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Genre</legend>
+                        <label><input type="checkbox" name="comedy" value="chosen"> Comedy </label> 
+                        <label><input type="checkbox" name="romance" value="chosen"> Romance </label>
+                        <label><input type="checkbox" name="drama" value="chosen"> Drama </label>
+                        <label><input type="checkbox" name="action_adventure" value="chosen"> Action/Adventure</label>
+                        <label><input type="checkbox" name="mystery" value="chosen"> Mystery</label>
+                        <label><input type="checkbox" name="scary" value="chosen"> Horror</label><br>
+                        <label>Type
+                            <select name="type">
+                            <option value="none">Please Select</option>
+                            <option value="super">superhero</option>
+                            <option value="supernatural">supernatural</option>
+                            <option value="old">old</option>
+                            <option value="other">other</option>
+                           </select></label>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Where to watch</legend>
+                     <label><input type="radio" name="where" value="hulu"> Hulu</label>
+                   <label><input type="radio" name="where" value="prime*"> Amazon Prime</label>
+                   <label><input type="radio" name="where" value="apple"> Apple</label>
+                   <label><input type="radio" name="where" value="netflix"> Netflix</label>
+                   <label><input type="radio" name="where" value="youtube*"> Youtube</label>
+                   <label><input type="radio" name="where" value="peacock"> Peacock</label>
+                   <label><input type="radio" name="where" value="max"> Max</label>
+                   <label><input type="radio" name="where" value="paramount"> Paramount</label>
+                   <label><input type="radio" name="where" value="disney"> Disney+</label>
+                       </fieldset>
+    
+                       <label>Anything else I should know?
+    
+                        <textarea name="know?" placeholder="Is it free with the service or do I need to buy it?"></textarea>
+                       </label>
+
+                <input type="submit" value="Recommend!">
+            </form>
+
+            <h2>Having Trouble?</h2>
+            <p>Leave your number below and I will contact to help with any technical problems or tv/movie recemendations for you</p>
+            <form method="get" class="recs" action="thankshelp.html">
+                <fieldset>
+                <legend> Contact Info</legend>
+            <label>First Name*<input type="text" name="fname" required placeholder="Jimmy"></label> 
+            <label>Last Name*<input type="text" name="lname" required placeholder="Fallon"></label> 
+            <label>Email*<input type="email" name="email"></label> 
+            <label>Cell Number<input type="tel" name="phone" required placeholder="777-777-7272"></label>
+             </fieldset>
+                <input type="submit" value="Please Help!!!">
+            </form>
+
+        </main>
+         <!-- Start of the footer :)-->
+        <footer>
+            <p>&copy; 2024 &bull; Lex &bull; <a href="mailto:recsforlex@gmail.com"> Email Me </a></p>
+        </footer>
+    </body>
+</html>
