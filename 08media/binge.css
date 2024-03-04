@@ -1,0 +1,279 @@
+*{box-sizing: border-box;}
+
+/* Body */
+body {
+    background-color: #94618e;
+    color: #F8EEE7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+header h1 { 
+    font-weight: 800;
+}
+main h1 {
+    font-weight: 600;
+}
+main h2 {
+    font-weight: 400;
+}
+main p {
+    font-weight: 300;
+}
+/* Header */
+header {
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header h1 {
+    margin: 0;
+}
+header p {
+
+    margin-top: 0;
+}
+
+/* Nav*/
+/* Small Screens*/
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+       }
+       nav a {
+        display: block;
+        padding: .83rem 2rem;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: capitalize;
+        text-align: center;
+        border-bottom: solid 1px #f4decb;
+        color: #F8EEE7;
+       }
+       nav .active a {
+        background-image: linear-gradient(to right, #6a3b6b ,#49274A);
+        color: #F8EEE7;
+}
+}
+/* big screens */
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: #49274A;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+    
+    Nav a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #F8EEE7;
+        font-weight: 600;
+        display: block;
+        padding: .75rem 1.5rem;
+    }
+    nav li.active a {
+        background-color: #F8EEE7;
+        color:#49274A;
+    }
+    
+
+}
+
+/*Main*/
+
+
+main h2 {
+    background-color: #49274A;
+    padding: .5rem;
+    width: 24rem;
+    border-radius: .5rem;
+}
+
+main {
+    padding: 1rem 2vw;
+} 
+
+main img {
+    border-radius: .5rem;
+}
+
+main a { 
+    color: #F8EEE7;
+}
+main a:hover { 
+    color: #49274A;
+}
+
+main dl dt {
+    color: #49274A;
+    font-weight: 700;
+}
+
+main dl dd {
+    color: #f4decb;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type:circle;
+
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #49274A;
+    padding: 1rem;
+    width: 13rem;
+    border: 1px solid ;
+    border-radius: .5rem;
+}
+div.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+div.categories img:hover {
+    box-shadow: 0px 0px 10px rgba(73, 39, 74, 1);
+}
+
+figure.current {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+    height: auto;
+}
+
+figure.current img{
+    width: 100%;
+    height: auto;
+}
+
+main p.main {
+    padding-bottom: 10svw;
+}
+.recs fieldset {
+    border: 1px solid #49274A;
+    border-radius: 2px;
+    margin-bottom: .5rem;
+}
+
+.recs legend {
+    color: #f4decb;
+    font-size: .9rem;
+}
+
+.recs [type=text], .recs select, .recs textarea, .recs [type=tel], .recs [type=email] {
+    display: block;
+}
+
+.recs label{
+    margin: .3rem;
+    display: block;
+}
+
+.recs [type=text], .recs textarea
+ {
+    border: solid 1px #49274A;
+    padding: .2rem;
+    width: 400px;
+    margin-bottom: .5rem;
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.recs 
+
+.recs select, .recs [type=tel],.recs [type=email]  {
+    border: #49274A;
+    padding: .2rem;
+    width: 200px;
+    border-radius: 2px;
+    margin-bottom: .5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.recs textarea {
+    height: 4rem;
+}
+
+.recs [type=submit] {
+
+    background-color: #49274A;
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: .5rem;
+    color: #F8EEE7;
+    margin: .8rem .1rem;
+}
+
+figure .hero {
+        width: 100%;
+        margin: 0;
+}
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+table.upcoming {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 10rem;
+    border-bottom: solid 1px #49274A;
+}
+
+table.upcoming th {
+    background-color: #49274A;
+    color: #F8EEE7;
+    padding: .5rem;
+    text-align: left;
+
+}
+
+table.upcoming td {
+    color: #F8EEE7;
+    padding: .4rem .5vw; 
+}
+
+table.upcoming tr:nth-child(odd) {
+    background-color: rgba(73, 39, 74, .2);
+}
+
+table.upcoming tr:hover {
+    background-color: rgba(244, 222, 203, .1);
+}
+
+/*Footer*/
+footer {
+    background-color: #49274A;
+    text-align: center;
+    color: #F8EEE7;
+    padding: 1rem 0;
+    font-size: 1rem;
+    clear: both;
+}
+
+footer a {
+    color: #F8EEE7;
+}
+
+header, nav, main, footer {
+    max-width: 75rem;
+    margin: 0 auto;
+}
